@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     todoForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const todoText = todoInput.value.trim();
-        
+
         if (todoText) {
             const newTodo = {
                 id: Date.now(),
                 text: todoText,
                 completed: false
             };
-            
+
             todos.unshift(newTodo);
             saveTodos();
             renderTodos();
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const todoId = parseInt(e.target.dataset.id);
             toggleTodoComplete(todoId);
         }
-        
+
         if (e.target.classList.contains('delete-btn')) {
             const todoId = parseInt(e.target.dataset.id);
             deleteTodo(todoId);
