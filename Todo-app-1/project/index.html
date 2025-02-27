@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Todo App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Todo List</h1>
-        <form id="todo-form">
-            <div class="input-group">
-                <input 
-                    type="text" 
-                    id="todo-input" 
-                    placeholder="What needs to be done?"
-                    autocomplete="off"
-                    required
-                >
-                <button type="submit">Add</button>
-            </div>
-        </form>
-        <div class="todos-container">
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="active">Active</button>
-                <button class="filter-btn" data-filter="completed">Completed</button>
-            </div>
-            <ul id="todo-list"></ul>
-            <div class="todos-footer">
-                <span id="items-left">0 items left</span>
-                <button id="clear-completed">Clear completed</button>
-            </div>
+      <h1>Todo List</h1>
+      <form id="todo-form">
+        <div class="input-group">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="What needs to be done?"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Add</button>
         </div>
+      </form>
+      <div class="todos-container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <ul id="todo-list"></ul>
+        <div class="todos-footer">
+          <span id="items-left">0 items left</span>
+          <button id="clear-completed">Clear completed</button>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

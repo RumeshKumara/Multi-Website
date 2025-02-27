@@ -162,6 +162,7 @@ button:hover {
 }
 .todo-checkbox {
     color: #9e4aff;
+    border: #980bf6;
 }
 #clear-completed {
     background: transparent;
