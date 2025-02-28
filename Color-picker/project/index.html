@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker Tool</h1>
+        
+        <div class="color-picker-container">
+            <div class="color-display" id="color-display"></div>
+            
+            <div class="color-controls">
+                <div class="sliders">
+                    <div class="slider-container">
+                        <label for="red">R</label>
+                        <input type="range" id="red" min="0" max="255" value="0" class="slider">
+                        <span id="red-value">0</span>
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label for="green">G</label>
+                        <input type="range" id="green" min="0" max="255" value="0" class="slider">
+                        <span id="green-value">0</span>
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label for="blue">B</label>
+                        <input type="range" id="blue" min="0" max="255" value="0" class="slider">
+                        <span id="blue-value">0</span>
+                    </div>
+                </div>
+                
+                <div class="color-values">
+                    <div class="value-container">
+                        <label for="hex-value">HEX</label>
+                        <div class="copy-container">
+                            <input type="text" id="hex-value" value="#000000" readonly>
+                            <button id="copy-hex" class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                    
+                    <div class="value-container">
+                        <label for="rgb-value">RGB</label>
+                        <div class="copy-container">
+                            <input type="text" id="rgb-value" value="rgb(0, 0, 0)" readonly>
+                            <button id="copy-rgb" class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="saved-colors">
+            <h2>Saved Colors</h2>
+            <div class="color-palette" id="color-palette"></div>
+            <button id="save-color" class="save-btn">Save Current Color</button>
+            <button id="clear-colors" class="clear-btn">Clear All</button>
+        </div>
+        
+        <div class="color-picker-input">
+            <label for="color-input">Or pick a color:</label>
+            <input type="color" id="color-input" value="#000000">
+        </div>
+        
+        <div id="notification" class="notification">Copied to clipboard!</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
