@@ -186,5 +186,6 @@ button:hover {
 
     .filters {
         flex-wrap: wrap;
+        gap: 0.5rem;
     }
 }
