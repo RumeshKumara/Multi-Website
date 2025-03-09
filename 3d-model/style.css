@@ -91,3 +91,188 @@ nav a:hover{
     color: #fff;
     border: 1px solid #858484;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh - 6rem);
+}
+
+.content{
+    max-width: 40rem;
+    margin-left: 10%;
+    z-index: 999;
+}
+
+.tag-box{
+    position: relative;
+    width: 18rem;
+    height: 2.5rem;
+    background: linear-gradient(to right, #0f39f5, #82019b, #012180, #821dfd);
+    border-radius: .8rem;
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes animationGradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.tag-box .tag{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background: #0b0b0b;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.tag-box .tag:hover{
+    background: #151515;
+}
+
+.content h1{
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(59, 57, 57, 0.5);
+}
+
+.description{
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    max-width: 35rem;
+    color: #7d7d7d;
+}
+.description span{
+    color: #bd31fe;
+    background-color: #281237f3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.btn-get-started{
+    background-color: transparent;
+    color: #626161;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 1px solid #fff;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+.btn-get-started:hover{
+    color: #303030;
+    border: 1px solid #858484;
+}
+.btn-signing-started{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+    transition:  0.5s ease;
+    cursor: pointer;
+}
+
+.btn-signing-started:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #f3f3f3;
+}
+.spline-viewer{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    transform: scale(.6); /* Remove any scaling */
+}
+
+@media (max-width: 1300px){
+    header{
+        padding: 1rem .5rem;
+    }
+    .content{
+        margin-top: 85%;
+    }
+
+    .spline-viewer{
+        scale: 0.8;
+        right: 2%;
+        top: -20%;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 1rem .1rem;
+    }
+    nav{
+        display: none;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .btn-signing{
+        padding: 0.3rem 0.8rem;
+    }
+    .content{
+        margin-top: 25rem;
+    }
+
+    .spline-viewer{
+        scale: 0.5;
+        right: 0;
+        top: -25%;
+    }
+    .content{
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+
+    .tag-box{
+        width: 12rem;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+
+    .btn-get-started{
+        padding: 0.5rem 1.2rem;
+        font-size: .8rem;
+    }
+
+    .btn-signing-started{
+        padding: 0.5rem 2rem;
+        font-size: .8rem;
+    }
+
+
+}
