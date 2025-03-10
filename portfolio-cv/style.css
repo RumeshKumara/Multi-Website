@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+.back-vid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: rgba(13, 17, 34, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px #7070ac80;
+    padding: 0 30px;
+    position: absolute;
+    z-index: 999;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.left h1{
+    background: linear-gradient(to right, #371d6f, #ad7bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left img{
+    width: 50px;
+    margin: 0 15px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 15px 15px;
+    border-radius: 50px;
+    background-color: rgba(13, 17, 34, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 8px #4a4a7080;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header ul li a:hover{
+    background-color: rgba(13, 17, 34, 0.5);
+}
+
+.box-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.box-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(66, 98, 195);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.box-icons a:hover{
+    background-color: rgb(66, 98, 195);
+    color: black;
+    box-shadow: 0 0 10px rgb(66, 98, 195);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-aspect-ratio: 16/9){
+    .back-vid{
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-vid{
+        height: auto;
+        width: 100%;
+    }
+}
