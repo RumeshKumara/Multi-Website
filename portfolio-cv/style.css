@@ -44,7 +44,7 @@ header{
     align-items: center;
 }
 .left h1{
-    background: linear-gradient(to right, #371d6f, #ad7bfe);
+    background: linear-gradient(to right, #192c76, #7b84fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -73,10 +73,11 @@ header ul li a{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    transition: all 0.5s;
 }
 
 header ul li a:hover{
-    background-color: rgba(13, 17, 34, 0.5);
+    color: #a0a0a0;
 }
 
 .box-icons{
