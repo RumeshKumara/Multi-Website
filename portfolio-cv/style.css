@@ -20,7 +20,7 @@ body{
     right: 0;
     bottom: 0;
     z-index: -1;
-    mix-blend-mode: overlay;
+    mix-blend-mode: lighten;
 }
 
 header{
@@ -116,6 +116,143 @@ header ul li a:hover{
     width: 100%;
     margin-top: -23.5%;
 }
+
+
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-info{
+    position: absolute;
+    left: 5%;
+}
+
+.hero-info .hero-info-title{
+    color: #727fde;
+    padding: 8px 6px;
+    border: 1px solid #727fde;
+    border-radius: 50px;
+    width: 240px;
+    background-color: rgba(13, 17, 34, 0.8);
+    box-shadow: 0 0 10px #727fde;
+}
+
+.hero-info h1{
+    font-size: 60px;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-info p{
+    font-size: 20px;
+    max-width: 500px;
+    line-height: 25px;
+    color: #686868;
+    margin-bottom: 40px;
+}
+
+.hero-info button{
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid #727fde;
+    background-color: rgba(13, 17, 34, 0.8);
+    box-shadow: 0 0 5px #727fde;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-info button:hover{
+    box-shadow: 1px 1px 10px #727fde;
+}
+
+.gradient{
+    background: linear-gradient(to right, #192c76, #7b84fe, #c325b3, #2d689b, #8126c1, #192c76);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+
+.hero-vid-box{
+    position: absolute;
+    right: 2%;
+}
+
+.hero-vid-box video{
+    height: 900px;
+    mix-blend-mode: difference;
+
+}
+
+.scroll-down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid rgb(190, 190, 190);
+    position: absolute;
+    left: 48%;
+    cursor: pointer;
+    bottom: 8%;
+    border-radius: 50px;
+    box-shadow: 0 0 10px white;
+}
+
+.scroll-down::before,
+.scroll-down::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(208, 208, 208);
+    border-left: transparent;
+    border-top: transparent;
+    animation: scroll-down 2s ease-in-out infinite;
+}
+
+.scroll-down::before{
+    top: 30%;
+    animation-delay: .5s;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%, 60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
