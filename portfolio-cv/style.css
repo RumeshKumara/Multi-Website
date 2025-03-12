@@ -60,7 +60,7 @@ header ul{
     width: 30%;
     padding: 15px 15px;
     border-radius: 50px;
-    background-color: rgba(13, 17, 34, 0.8);
+    background-color: rgba(13, 17, 34, 0.6);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 8px #4a4a7080;
 }
@@ -105,7 +105,17 @@ header ul li a:hover{
     box-shadow: 0 0 10px rgb(66, 98, 195);
 }
 
-
+.blackhole-box{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    mix-blend-mode: lighten;
+}
+.blackhole-box video{
+    width: 100%;
+    margin-top: -23.5%;
+}
 
 
 
