@@ -9,7 +9,7 @@ body{
     color: aliceblue;
     font-family: "Tektur", sans-serif;
     padding: 2rem;
-
+    overflow: hidden; /* Hides both vertical and horizontal scrollbars */
     }
     *{
         margin: 0;
@@ -151,4 +151,37 @@ body{
        }
    }
 
-  
+  /* 3D planet */
+  .planet-3d{
+    position: absolute;
+    top: -12%;
+    right: -10%;
+    width: 120%;
+    height: 120%;
+  }
+
+@media (max-width: 1400px){
+    main h1 {
+        font-size: 4.5em;
+        letter-spacing: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    main h1 {
+        display: none;
+    }
+
+    .bio-section{
+        margin-bottom: 1rem;
+    }
+    .bio-content{
+        font-size: 0.9em;
+        max-width: 15rem;
+    }
+    .location p {
+        font-size: 1em;
+    }
+}
