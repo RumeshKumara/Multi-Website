@@ -8,14 +8,19 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2829",endColorstr="#1d2829",GradientType=1);
     color: aliceblue;
     font-family: "Tektur", sans-serif;
+    padding: 2rem;
 
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     header{
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding: 10px;
         font-size: 2em;
         font-weight: bold;
     }
@@ -35,3 +40,115 @@ body{
         cursor: pointer;
         transition: background 0.3s ease;
     }
+    .contact-btn:hover{
+        background: #06110d;
+    }
+
+    main{
+        overflow: hidden;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 85vh;
+    }
+
+    .title-section{
+        margin-top: 2rem;
+    }
+
+    main h1{
+        text-align: center;
+        font-size: 6em;
+        font-weight: bold;
+        letter-spacing: 5px;
+        line-height: 1;
+        background-image: linear-gradient( rgba(255, 255, 255), rgb(38, 179, 28));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .location{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location p {
+        font-size: 1.5em;
+        background-image: linear-gradient( rgba(255, 255, 255), rgb(38, 179, 28));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .bio-section{
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+
+    .bio-content{
+        font-size: 1em;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-weight: 500;
+        max-width: 22rem;
+    }
+
+    .scroll-down{
+        height: 5rem;
+        width: 2rem;
+        position: absolute;
+        right: 2%;
+        bottom: 5%;
+        box-shadow: 0 0 10px rgb(133, 133, 133) ;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .scroll-down::before,
+    .scroll-down::after{
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -100%) rotate(45deg);
+        width: 10px;
+        height: 10px;
+        border: 2px solid lightblue;
+        border-top: transparent;
+        border-left: transparent;
+        animation: scroll-down 3s ease-in-out infinite;
+    }
+
+   .scroll-down::before{
+    top: 30%;
+    animation-delay: .8s;
+   }
+
+   @keyframes scroll-down {
+       0% {
+        opacity: 0;
+       }
+       30%, 60%{
+        opacity: 1;
+       }
+       100% {
+        opacity: 0;
+        top: 90%;
+       }
+   }
+
+  
