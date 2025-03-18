@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
     <title>Document</title>
   </head>
   <body>
@@ -70,7 +71,7 @@
           <button><i class="bx bxs-send"> </i> Contact Me</button>
         </div>
 
-        <div class="hero-vid-box">
+        <!-- <div class="hero-vid-box">
           <video
             loop
             autoplay
@@ -80,9 +81,14 @@
             src="video/hero-video.mp4"
             type="video/mp4"
           ></video>
-        </div>
+        </div> -->
 
         <div class="scroll-down"></div>
+
+        <spline-viewer
+          class="planet-3d"
+          url="https://prod.spline.design/oPJP7TA-LWVucXLe/scene.splinecode"
+        ></spline-viewer>
       </section>
 
       <section class="info-section">
@@ -133,6 +139,57 @@
           </div>
         </div>
       </section>
+
+      <section class="my-project">
+        <h1 class="section-title">My Project 🧑‍💻</h1>
+        <div class="project-card">
+          <div class="project-vidbox">
+            <video src="video/project1.mp4"></video>
+          </div>
+          <div class="project-info">
+            <h1>Animated <span class="gradient">Gaming</span> Website</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+              consectetur ex, sit amet tristique velit. Donec sed tellus vel
+              velit posuere faucibus.
+            </p>
+            <button><i class="bx bx-link-external"></i> Visit Website</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-vidbox">
+            <video src="video/project2.mp4"></video>
+          </div>
+          <div class="project-info">
+            <h1>Animated <span class="gradient">Gaming</span> Website</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              ducimus quibusdam doloremque vitae. Deleniti eveniet pariatur enim
+              fuga quam consequatur repellat ducimus illum quia?
+            </p>
+            <button><i class="bx bx-link-external"></i> Visit Website</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-vidbox">
+            <video src="video/project3.mp4"></video>
+          </div>
+          <div class="project-info">
+            <h1>Animated <span class="gradient">Gaming</span> Website</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+              consectetur ex, sit amet tristique velit. Donec sed tellus vel
+              velit posuere faucibus.
+            </p>
+            <button><i class="bx bx-link-external"></i> Visit Website</button>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"
+    ></script>
   </body>
 </html>
