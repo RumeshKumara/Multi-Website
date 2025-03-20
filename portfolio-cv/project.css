@@ -88,3 +88,39 @@
     box-shadow: 0 0 8px #727fde;
     transform: scale(1.04);
 }
+
+.hover-sign{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100px;
+}
+
+.hover-sign::before,
+ .hover-sign::after{
+    content: '👆';
+    text-align: center;
+    position: absolute;
+    font-size: 50px;
+    top: 20%;
+    left: 40%;
+    border-radius: 50%;
+    animation: hoverAnimation 3s ease-in-out infinite;
+}
+
+@keyframes hoverAnimation {
+    0%{
+        box-shadow: 0 0 5x lightblue;
+        transform: translate(100%, 50%) rotate(30deg);
+    }
+    100%{
+        box-shadow: 0 0 10px lightblue;
+        transform: translateX(80%, 50%) rotate(0deg);
+    }
+}
+
+.hover-sign.active{
+    display: none;
+}
