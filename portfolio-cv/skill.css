@@ -1,0 +1,42 @@
+.skill-sectiom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.skill-box{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.skill-image{
+    width: 70%;
+    mix-blend-mode: lighten;
+    opacity: 0.7;
+}
+
+.designer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 25%;
+    left: 5%;
+    max-width: 300px;
+}
+
+.coder{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 25%;
+    right: 5%;
+    max-width: 300px;
+
+}
