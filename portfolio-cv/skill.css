@@ -1,9 +1,19 @@
+:root {
+    --width: 200px; /* Define the width of each slider item */
+    --height: 100px; /* Define the height of each slider item */
+    --quantity: 5; /* Total number of items in the slider */
+    --position: 1; /* Default position for animation */
+}
+
 .skill-sectiom{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
+}
+.section-title{
+    text-align: center;
 }
 
 .skill-box{
@@ -66,6 +76,12 @@
         rgba(255, 255, 255, 0) 0%,
         transparent
     );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0) 0%,
+        transparent
+    ); /* Fallback for WebKit browsers */
     mix-blend-mode: difference;
     opacity: 0.8;
 }
@@ -84,7 +100,7 @@
     left: 100%;
     animation: autoRun 10s linear infinite;
     transition: filter 0.5s;
-    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1)) !important; /* Fixed calculation */
 } 
 
     .slider .list .item img{
